@@ -1,0 +1,78 @@
+#header-cont{
+    display: flex;
+    justify-content: space-between;
+}
+#header-logo{
+   margin-left: 30%;
+   font-size: 25px;
+   font-family:sans-serif;
+   color: rgb(21, 216, 86);
+   letter-spacing: 5px;
+}
+#search{
+    margin-top: 10px;
+    margin-left: 25%;
+    font-size: 20px;
+    color: rgb(126, 121, 121);;
+}
+#signin{
+    margin-top: 32px;
+    font-size: larger;
+}
+#find{
+    margin-top: 30px;
+    margin-left: 2%;
+    
+}
+#header-cart{
+    margin-top: 30px;
+   font-size: larger;
+}
+#header-lang{
+    margin-top: 15px;
+}
+#col{
+    color: rgb(126, 121, 121);
+    text-decoration: none;
+}
+#header-cartagary{
+    display: flex;
+    justify-content:space-evenly;
+    padding-left: 15%;
+    padding-right: 15%;
+    
+}
+.dropdown {
+  position: relative;
+  display:inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display:block;
+}
+#float{
+    display: flex;
+   width: 1100px;
+}
+#shop-cat-float{
+   margin-left: 20%;
+}
+#col1{
+    color: rgb(126, 121, 121);
+    text-decoration: none;
+    width: 500px;
+    
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
