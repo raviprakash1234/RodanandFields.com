@@ -6,8 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/searchbox.css">
 </head>
 <body>
+
+
+  <!-- searchbox -->
+<div id="model">
+  <span id="close">&times;</span>
+<input type="text"  id="search"/>
+<p id="search-text">Search for products, concerns and keywords.</p>
+
+<div id="display">
+    <div id="common-serch">
+        <h3>Common Searches</h3>
+            <p>Acne</p>
+            <p>Moisturizer</p>
+            <p>Retinol</p>
+            <p>Face Serum</p>
+            <p>Brows</p>
+    </div>
+
+    <div id="popular">
+        <h3>Popular Products</h3>
+        <p>R+F Lash Boost</p>
+        <p>REDEFINE Regimen</p>
+        <p>Multi-Function Eye Cream</p>
+        <p>Active Hydration Serum</p>
+        <p>Micro-Dermabrasion Paste</p>
+    </div>
+    <div id="img-display">
+        <img src="https://www.rodanandfields.com/en-us/medias/21-GR-Spot-Corrector-Core-Regimen-SEARCH-promotion-widescreen.jpg?context=bWFzdGVyfHJvb3R8MTUxMjN8aW1hZ2UvanBlZ3xoN2EvaDA5LzEyNzgwOTI4MjcwMzY2LmpwZ3xlZDYwZjU3ZDkyMDVhYzEyMmRjYzJjZGMzMjg3OGU2MGI0M2FkYjc0ZmE3YzUzYjgxOTgxMmU4ZjA1OWY1MDAw" alt="Avatar"/>
+        <p id="text">Tackle stubborn dark marks with REVERSE SPOT CORRECTOR.</p>
+    </div>
+</div>
+</div>
+
+
+
+
+
    <div id="header-cont">
     <div id="find">
         <a id="col" href="#">FIND A CONSULTANT</a>
@@ -16,9 +54,9 @@
         <a id="col" href="#"><h5>RODAN+FIELDS</h5></a>
     </div>
 
-    <div id="search">
+    <div id="search1">
         <p>Search
-           <a href="#">
+           <a id="myBtn" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
               </svg>
@@ -141,10 +179,30 @@
       </div>
 </div>
 
+
+
+
+
+
 </body>
 </html>
 <script>
+ var span = document.getElementById("close")
+ var modal = document.getElementById("model")
 
+var btn = document.getElementById("myBtn")
+
+btn.onclick = function(){
+  modal.style.display = "block"
+}
+
+
+ function closeModal() {
+    modal.style.display = "none";
+  }
+  span.onclick = function () {
+    closeModal();
+  };
 
 
 </script>

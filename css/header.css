@@ -9,9 +9,9 @@
    color: rgb(21, 216, 86);
    letter-spacing: 5px;
 }
-#search{
+#search1{
     margin-top: 10px;
-    margin-left: 25%;
+    margin-left: 20%;
     font-size: 20px;
     color: rgb(126, 121, 121);;
 }
@@ -75,4 +75,12 @@
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#model{
+    display: none;
+    position: fixed;
+    margin-left: 15%;
+    background-color: rgb(236, 236, 236);
+    overflow: auto;
 }
