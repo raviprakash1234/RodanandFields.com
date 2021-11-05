@@ -1,9 +1,10 @@
-body{
+/* body{
     width: 60%;
     margin: auto;
-}
+} */
 #display{
   display: flex;
+  margin-left: 10%;
 }
 #checkoutpage{
   text-align: center;
@@ -42,7 +43,7 @@ width: 102%;
   padding: 60px;
 }
 #checkoutorder{
-  margin-left: 19%;
+  margin-left: 5%;
   border: 1px solid gray;
   padding: 20px;
   height: 60%;
@@ -64,7 +65,7 @@ width: 102%;
 #billing{
   border: 1px solid gray;
   margin-top: 30px;
-  width: 150%;
+  width: 100%;
 }
 #sub1{
   float: right;
@@ -72,13 +73,13 @@ width: 102%;
 }
 #persnal{
   font-size: 15px;
-  width: 150%;
+  width: 100%;
   border: 1px solid gray;
 }
 
 #shipping_details{
   font-size: 15px;
-  width: 150%;
+  width: 100%;
   border: 1px solid gray;
   margin-top: 10%;
 }

@@ -4,7 +4,7 @@
     width: 105%;
 }
 #header-logo{
-   margin-left: 30%;
+   margin-left: 27%;
    font-size: 25px;
    font-family:sans-serif;
    color: rgb(21, 216, 86);
@@ -39,7 +39,7 @@
 #header-cartagary{
     display: flex;
     justify-content:space-evenly;
-    padding-left: 15%;
+    padding-left: 23%;
     padding-right: 15%;
 }
 .dropdown {
@@ -65,7 +65,7 @@
    width: 1200px;
 }
 #shop-cat-float{
-   margin-left: 20%;
+   margin-left: 15%;
 }
 #col1{
     color: rgb(126, 121, 121);

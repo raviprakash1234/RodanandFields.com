@@ -1,10 +1,10 @@
 h1{
     text-align: center;
   }
-  body{
+  /* body{
     width: 70%;
     margin: auto;
-  }
+  } */
   #pc-perk{
      border: 1px solid rgb(119, 116, 116);;
      width: 50%;
@@ -12,6 +12,7 @@ h1{
      background-color: rgb(201, 197, 197);
      padding: 10px;
      border-radius: 5px;
+     margin-left: 10%;
      
   }
   #pc-perk>div>img{
@@ -34,6 +35,7 @@ h1{
     margin-top: 5%;
     background-color: black;
     color: white;
+    
   }
   #img-size{
     width: 20%;
@@ -56,7 +58,7 @@ h1{
     margin-left: 4%;
   }
 
-  #display{
+  #cart_display{
     display: flex;
   }
   #product_div{

@@ -1,14 +1,14 @@
 
 #nameoncreaditcard{
-    width: 40%;
+    width: 30%;
     height: 40px;
 }
 #cardNumber{
-   width: 40%;
+   width: 30%;
     height: 40px; 
 }
 #creditcardbtn{
-   width: 40%;
+    width: 40%;
     height: 40px;
     background-color: black;
     font-size: 20px;
@@ -25,15 +25,14 @@
    width: 70%;
 }
 #model{
-    display: none;
-   
+display: none;
 border: 1px solid gray;
-width: 60%;
 padding: 30px; 
 margin-top: 30px;
-    
+margin-left: 10%;    
 }
-span{
+#close{
     float: right;
     font-size: 30px;
+    cursor: pointer;
 }
