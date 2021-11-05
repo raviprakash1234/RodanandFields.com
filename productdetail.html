@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#details_display{
+    display: flex;
+    margin-left: 10%;
+}
+#detail_img{
+width: 70%;
+margin-left: 25%;
+}
+#details_of_product{
+    margin-top: 60px;
+}
+#detail_dis{
+    width: 60%;
+}
+#details_of_product>h3{
+    font-size: 30px;
+
+}
+#details_of_product>h3>span{
+    font-size: 20px;
+}
+#details_line{
+    width: 60%;
+    margin-right: 40%;
+}
+#custmise_btn{
+    width: 70%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+</style>
+<body>
+    <!-- home - all product- name of product -->
+    <div>
+        <div>
+            <a href="#">HOME---></a>
+            <a href="#">All Product---></a>
+            <a href="#">Regimen---></a>
+        </div>
+    </div>
+      <!-- home - all product- name of product end-->
+
+    <div id="details_display">
+        <!-- <div>
+            <img id="detail_img" src="https://www.rodanandfields.com/en-us/medias/HAAGR-AAWA125-AATN125-AATT030-AAPM030.jpg?context=bWFzdGVyfGltYWdlc3w4Njg1OHxpbWFnZS9qcGVnfGltYWdlcy9oMGIvaDE2LzEzNDI4MDE3NjI3MTY2LmpwZ3w4Yzc5YjRmNWI3YzhmYTUwOWQwYmY3YmFhNTJhYjZlMDBhMGQ4MDFkZjBkY2YwMWFlY2I4YTE2OTY3Nzc2OWY5" alt="Avatar"/>
+
+        </div>
+        <div id="details_of_product">
+            <h1>REDEFINE Regimen</h1>
+            <p id="detail_dis">Redefine your skin. Our best selling anti-aging skincare routine visibly lifts, sculpts + firms while minimizing the appearance of lines + deep wrinkles.</p>
+             <h3>$220.00
+                 <span>($275.00  Value)</span>
+             </h3>
+             <p>4 interest-free payments of $55.00 with Klarna.</p>
+             <hr id="details_line"/><br><br><br>
+             <button id="custmise_btn">CUSTMISE YOUR REGIMEN</button>
+        </div> -->
+    </div>
+</body>
+</html>
+<script>
+ let cart_data = JSON.parse(localStorage.getItem("cart1"))
+ console.log('cart_data:', cart_data)
+
+ let data_div = document.getElementById("details_display")
+
+ cart_data.forEach(function(p){
+     let image_div = document.createElement("div") //for image
+     let details_div = document.createElement("div") //for details
+
+     let img = document.createElement("img")
+     img.src = p.image
+
+     let p_name = document.createElement("h1")
+     p_name.innerText = p.name
+
+     let p_dis = document.createElement("p")
+     p_dis.innerText = p.discription
+      
+     let p_price = document.createElement("h3")
+     p_price.innerText = p.price
+      
+     let span = document.createElement("span")
+     span.textContent = "($289)"
+
+     let kalrana = document.createElement("p")
+     kalrana.textContent = "4 interest-free payments of $55.00 with Klarna."
+
+     let custmise_btn = document.createElement("button")
+     custmise_btn.textContent = "CUSTMISE YOUR REGIMEN"
+
+     let for_line_klrana = document.createElement("hr")
+     let br = document.createElement("br")
+
+    //  span inside price
+    p_price.append(span)
+
+
+
+     image_div.append(img)
+
+     details_div.append(p_name,p_dis,p_price,kalrana,for_line_klrana,br,custmise_btn)
+
+     data_div.append(image_div,details_div)
+
+
+     img.setAttribute("id","detail_img")
+     details_div.setAttribute("id", "details_of_product")
+     p_dis.setAttribute("id", "detail_dis")
+    custmise_btn.setAttribute("id", "custmise_btn")
+
+ })
+
+ 
+
+
+</script>
+
+

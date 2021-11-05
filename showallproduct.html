@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/header.css"/>
+    <link rel="stylesheet" href="./css/searchbox.css"/>
+    <link rel="stylesheet" href="./css/loginsignup.css">
 </head>
 <style>
-    /* #catg{
-        width: 20px;
-    } */
     #display{
         display: flex;
     }
     #show_prod{
         display: grid;
         grid-template-columns: repeat(3, 33%);
-        margin-left: 13%;
-        align-items:baseline;
+        margin-left: 20%;
+        align-items:flex-end;
     }
     #product_img{
       width: 70%;
@@ -38,6 +39,179 @@
     
 </style>
 <body>
+
+
+
+     <!-- header start -->
+  <!-- searchbox -->
+  <div id="model1">
+    <span id="close1">&times;</span>
+  <input type="text"  id="search"/>
+  <p id="search-text">Search for products, concerns and keywords.</p>
+  
+  <div id="display1">
+      <div id="common-serch">
+          <h3>Common Searches</h3>
+              <p>Acne</p>
+              <p>Moisturizer</p>
+              <p>Retinol</p>
+              <p>Face Serum</p>
+              <p>Brows</p>
+      </div>
+  
+      <div id="popular">
+          <h3>Popular Products</h3>
+          <p>R+F Lash Boost</p>
+          <p>REDEFINE Regimen</p>
+          <p>Multi-Function Eye Cream</p>
+          <p>Active Hydration Serum</p>
+          <p>Micro-Dermabrasion Paste</p>
+      </div>
+      <div id="img-display">
+          <img id="inside_search_box" src="https://www.rodanandfields.com/en-us/medias/21-GR-Spot-Corrector-Core-Regimen-SEARCH-promotion-widescreen.jpg?context=bWFzdGVyfHJvb3R8MTUxMjN8aW1hZ2UvanBlZ3xoN2EvaDA5LzEyNzgwOTI4MjcwMzY2LmpwZ3xlZDYwZjU3ZDkyMDVhYzEyMmRjYzJjZGMzMjg3OGU2MGI0M2FkYjc0ZmE3YzUzYjgxOTgxMmU4ZjA1OWY1MDAw" alt="Avatar"/>
+          <p id="text">Tackle stubborn dark marks with REVERSE SPOT CORRECTOR.</p>
+      </div>
+  </div>
+  </div>
+  
+  
+     <div id="header-cont">
+      <div id="find">
+          <a id="col1" href="#">FIND A CONSULTANT</a>
+      </div>
+      <div id="header-logo">
+          <a id="col1" href="home.html"><h5>RODAN+FIELDS</h5></a>
+      </div>
+  
+      <div id="search1">
+          <p>Search
+             <a id="myBtn1" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+             </a>
+          </p>
+      </div>
+    
+      <div id="signin">
+        <a  href="#" id="myBtn">Sign In
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+          </svg>
+        </a>
+         
+      </div>
+  
+     <div id="header-cart">
+        <a href="cart.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+            </svg>
+        </a>
+      </div>
+  
+      <div id="header-lang">
+          <h3>English</h3>
+      </div>
+     </div>
+     <hr id="header_hr"/>
+  <div id="header-cartagary">
+      <div class="dropdown">
+          <p>SHOP</p>
+          <div class="dropdown-content">
+         
+        <div id="float">
+          <div>
+              <h4>SHOP BY CATEGORY</h4>
+              <p><a id="col" href="#">REGIMENS</a></p>
+              <p><a id="col" href="#">FACE SERUMS</a></p>
+              <p><a id="col" href="#">EYES, LIPS & LASHES</a></p>
+              <p><a id="col" href="#">FACE MASKS</a></p>
+              <p><a id="col" href="#">HAND AND BODY</a></p>
+              <p><a id="col" href="#">SUN PROTECTION</a></p>
+              <p><a id="col" href="#">PRO SKINCARE TOOLS</a></p>
+              <p><a id="col" href="#">ACCESERIES</a></p>
+              <p><a id="col" href="#">PFC FOUNDATION</a></p>
+              <p><a id="col" href="#">SPECIAL OFFERS</a></p>
+            
+             </div>
+             
+             <div id="shop-cat-float">
+              <h4>SHOP BY CONCERN</h4>
+              <p><a id="col" href="#">FINE LINES & DEEP WRINKLES</a></p>
+              <p><a id="col" href="#">LIFTING AND FARMING</a></p>
+              <p><a id="col" href="#">DULL & TIRED SKIN</a></p>
+              <p><a id="col" href="#">ACNE & BREAKOUTS</a></p>
+              <p><a id="col" href="#">TEEN ACNE</a></p>
+              <p><a id="col" href="#">UNEVEN TONE DARK SPOT</a></p>
+              <p><a id="col" href="#">SENSITIVITY/VISIBLE REDNESS</a></p>
+              <p><a id="col" href="#">PORES & BLACKHEADS</a></p>
+              <p><a id="col" href="#">DRY SKIN</a></p>
+             </div>
+  
+  
+             <div id="shop-cat-float">
+              <h4>SHOP BY PRODUCT LINE</h4>
+              <p><a id="col" href="#">FINE LINES & DEEP WRINKLES</a></p>
+              <p><a id="col" href="#">LIFTING AND FARMING</a></p>
+              <p><a id="col" href="#">DULL & TIRED SKIN</a></p>
+              <p><a id="col" href="#">ACNE & BREAKOUTS</a></p>
+              <p><a id="col" href="#">TEEN ACNE</a></p>
+              <p><a id="col" href="#">UNEVEN TONE DARK SPOT</a></p>
+              <p><a id="col" href="#">SENSITIVITY/VISIBLE REDNESS</a></p>
+              <p><a id="col" href="#">PORES & BLACKHEADS</a></p>
+              <p><a id="col" href="#">DRY SKIN</a></p>
+             </div>
+              </div>
+        </div>
+        </div>
+  
+        <div class="dropdown">
+          <p>BEST SELLERS</p>
+        </div>
+  
+     <div>
+          <div class="dropdown">
+              <p>FEATURED</p>
+              <div class="dropdown-content">
+              <p id="col1"><a id="col" href="#">SPECIAL OFFERS</a></p>
+              <p id="col1"><a id="col" href="#">NEW TOTAL RF SERUM</a></p>
+              <p id="col1"><a id="col" href="#">SPOTLESS FOR TEENS</a></p>
+              <p id="col1"><a id="col" href="#">SELF-CARE ESSENTIALS</a></p>
+              </div>
+            </div>
+     </div>
+  
+     <div>
+      <div class="dropdown">
+          <p>OUR STORY</p>
+          <div class="dropdown-content">
+          <p id="col1"><a id="col" href="#">R + F DIFFERENCE</a></p>
+          <p id="col1"><a id="col" href="#">PERSONALIZED SERVICE</a></p>
+          <p id="col1"><a id="col" href="#">EXPLORE OUR REGIMENS</a></p>
+          <p id="col1"><a id="col" href="#"> OUR FOUNDERS</a></p>
+          <p id="col1"><a id="col" href="#">OUR IMPACT</a></p>
+          </div>
+        </div>
+     </div>
+  
+        <div class="dropdown">
+          <p>PERKS PROGRAM</p>
+        </div>
+  
+        <div class="dropdown">
+          <p>BECOME A CONSULTANT</p>
+        </div>
+  
+  
+        <div class="dropdown">
+          <p>BLOG</p>
+        </div>
+  </div>
+
+
+  <!-- header end -->
+
     <div id="display">
         <div>
             <div id="filter">
@@ -95,95 +269,7 @@
     </div>
 </body>
 </html>
-<script>
-
-var product = [
-    {
-        name:"Active Hydration Serum",
-        dis:"Instantly boosts hydration levels by 200% and locks in moisture on skin's surface.",
-        image:"https://www.rodanandfields.com/en-us/medias/ENHEFG1-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3wxNTcwMHxpbWFnZS9qcGVnfGltYWdlcy9oOGIvaGI0LzEzNTMzMTcxNTE1NDIyLmpwZ3wyZjgzMWEzNzJhNjRjZmZmNTU3NTBjODE0NjcxYjgzY2Q2Y2MxMzgyNzk3ZjcxOTU3OGUyYTVlNzE5MjI4OTI5",
-        price:"$112"
-    },
-    {
-        name:"REDEFINE + Lash Boost Special",
-        dis:"Applied nightly to promote the appearance of longer, stronger and darker-looking",
-        image:"https://www.rodanandfields.com/en-us/medias/HAAGRLP1-AAWA125-AATN125-AATT030-AAPM030-ENHLSH01-720x600-desktop-1.jpg?context=bWFzdGVyfGltYWdlc3w0OTY1NnxpbWFnZS9qcGVnfGltYWdlcy9oY2IvaDg4LzEyNzgwOTE0NTA3ODA2LmpwZ3xlOGNmOTZiYjIyZGIxOTk4NGFhMDJiNDY1YzM0NzNjZjg2NDZiZTBkZTkwN2ZiOGIxZTBhNDQ0OWI5NzQ2ODMw",
-        price:"$343"
-    },
-    {
-        name:"REVERSE Regimen",
-        dis:"Brightens + refines skin’s surface while tackling the look of fine lines + dark spots.",
-        image:"https://www.rodanandfields.com/en-us/medias/RVWA125-RVTG125-RVSS050-RVTTG50-REVERSE-Regimen-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w0MTY5NHxpbWFnZS9wbmd8aW1hZ2VzL2gyNy9oZWIvMTM3NTgzODQzNDEwMjIucG5nfGI3NmIzMjI0NTc2Y2RiZjZlNTdhYjg0ZDM4ZjM0MmM2M2U5Yjg5Y2RiNTM1NTM1NGFlOWNiY2E5ZTVkYTM5NWY",
-        price:"$102"
-    },
-    {
-        name:"UNBLEMISH Regimen",
-        dis:"Helps clear and prevent breakouts while visibly minimizing pores and fine lines. ",
-        image:"https://www.rodanandfields.com/en-us/medias/UNWA125-UNTJ125-UNTT030-UNSS030-UNBLEMISH-Explainer-570x570.png?context=bWFzdGVyfGltYWdlc3w1NDk5N3xpbWFnZS9wbmd8aW1hZ2VzL2g2YS9oOTYvMTM3NTgzODQ4NjUzMTAucG5nfDNhOWMxMGU5MjIzMGEyZjNhNTZjNWVkMjUxYmJjODI5YmNlODhjODBkNzJjZTA4ZDk1YTk0Yzk0ZjkyNzdhZmU",
-        price:"$70"
-    },
-    {
-        name:"REDEFINE Multi-Function Eye Cream",
-        dis:"Visibly firms + lifts to improve the look of fine lines, wrinkles, sagging + crow’s feet.",
-        image:"https://www.rodanandfields.com/en-us/medias/MFEC-Regimen-Explainer-GLOBAL-570x570.png?context=bWFzdGVyfGltYWdlc3wyMzc3NHxpbWFnZS9wbmd8aW1hZ2VzL2gzNS9oZmMvMTM3NTgzODU0NTUxMzQucG5nfDNmYWYyNzdiZGY5OWIyY2UzMDYyZDliYmM2YmUzMTRmOGY3Yzg0YmY1ZjY2YjgyYWU1OGNhZDZiN2IzMjViZGI",
-        price:"$90"
-    },
-    {
-        name:"SPOTLESS Regimen",
-        dis:"Clears existing blemishes + prevents new ones with BPO2 Technology.",
-        image:"https://www.rodanandfields.com/en-us/medias/spotless-regimen-UNRS001.jpg?context=bWFzdGVyfGltYWdlc3wxOTY4NHxpbWFnZS9qcGVnfGltYWdlcy9oM2QvaGU3LzEzODE0NjU0MzA0Mjg2LmpwZ3xjNGJiOWMyMDczMDlmMzU4OWRjM2FiNjhkNjgxY2QyYzY1ZjI1NzNlY2NlNWZmMGE1NWZjNTUxMjNkOGIzY2Q3",
-        price:"$89"
-    }
-]
-
-var jsonproduct = JSON.stringify(product)
-localStorage.setItem("myItem",jsonproduct)
-
-var Mydata = localStorage.getItem("myItem")
-myItem = JSON.parse(Mydata)
-console.log('myItem:', myItem)
-
-
-
-let data_div = document.getElementById("show_prod")
-
-function showProduct(){
-  myItem.forEach(function(el){
-
-    let div = document.createElement("div")
-
-    let img = document.createElement("img")
-    img.src = el.image
- 
-    let p_name = document.createElement("h2")
-    p_name.innerText = el.name
-
-    let dis = document.createElement("p")
-    dis.innerText = el.dis
-
-    let p_price = document.createElement("h3")
-    p_price.innerText = el.price
-
-    let btn = document.createElement("button")
-    btn.textContent = "ADD TO BAG"
-
-  div.append(img,p_name,dis,p_price,btn)
-
-  data_div.append(div)
-
-div.setAttribute("id", "item_div")
-  img.setAttribute("id", "product_img")
-  p_name.setAttribute("id", "product_name")
-  dis.setAttribute("id", "product_dis")
-  p_price.setAttribute("id", "product_price")
-  btn.setAttribute("id","add_to_bag")
-  })
-}
-showProduct()
-
-
-
-
-
-
-</script>
+<script src="./scripts/showallproduct.js"></script>
+<script src="./scripts/header.js"></script>
+<!-- <script src="./scripts/home.js"></script> -->
+<script src="./scripts/loginsignup.js"></script>

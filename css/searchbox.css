@@ -1,7 +1,7 @@
-#display{
+#display1{
     display: flex;
 }
-img{
+#inside_search_box{
     width: 20%;
     margin-left: 20%;
 }

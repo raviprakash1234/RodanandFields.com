@@ -6,85 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/paymentpage.css">
+    <link rel="stylesheet" href="./css/checkout.css">
 </head>
-<style>
-    body{
-        width: 70%;
-        margin: auto;
-    }
-  #display{
-      display: flex;
-  }
-  #checkoutpage{
-      text-align: center;
-  }
-  .inputboxsize{
-      width: 100%;
-      height: 35px;
-  }
-  #Checkoutcontunue{
-      width: 100%;
-      height: 40px;
-      font-size: 20px;
-      background-color: black;
-      color: white;
-      letter-spacing: 2px;
-  }
-  #shippingbutton{
-    width: 102%;
-      height: 40px;
-      font-size: 20px;
-      background-color: black;
-      color: white;
-      letter-spacing: 2px;
-  }  
-  #check{
-      float: right;
-      margin-top: -0.1%;
-  }
-  #pernl{
-      border: 1px solid gray;
-      padding: 60px;
-  }
-  #shippingboder{
-      border: 1px solid gray;
-      margin-top: 30px;
-      padding: 60px;
-  }
-  #checkoutorder{
-      margin-left: 7%;
-      border: 1px solid gray;
-      padding: 20px;
-      height: 400px;
-  }
-  #checkoutimg{
-      width: 30%;
-      float: left;
-  }
-  #nameofproduct{
-      margin-top: 10%;
-  }
-  #margin{
-      margin-top: 20%;
-  }
-  #sub{
-      float: right;
-      margin-top: -11%;
-  }
-  #billing{
-      border: 1px solid gray;
-      margin-top: 30px;
-  }
-</style>
 <body>
 
     <h1 id="checkoutpage">CHECKOUT</h1>
 
     <div id="display">
-
+       
    <div>
             <!-- PERSONALinformation -->
+            <div id="persnal"></div>
             <div id="pernl">
+               <div id="checkout_border">
                 <h2>PERSONAL INFORMATION</h2>
                 <label for="firstname">First Name</label><br>
                 <input class="inputboxsize" type="text"  id="firstname"/><br>
@@ -94,11 +28,14 @@
                 <input class="inputboxsize" type="email"  id="email"/><br><br>
                 <input type="checkbox"  id="">
                 <p id="check">Sign me up to hear the latest on R+F products + special offers</p>
-                <button id="Checkoutcontunue">CONTINUE</button>
+                <button onclick="prsnl_info()" id="Checkoutcontunue">CONTINUE</button>
+               </div>
             </div>
             
             <!-- shipping -->
+            <div id="shipping_details"></div>
             <div id="shippingboder">
+               <div id="shipping_boder">
                 <h2>SHIPPING</h2>
                 <h3>Send my order to:</h3>
                  <input class="inputboxsize" type="text" name="" id="firstName" placeholder="First Name"/><br/><br/>
@@ -108,7 +45,8 @@
                 <input class="inputboxsize" type="text" name="" id="city" placeholder="City"/><br/><br/>
                 <input class="inputboxsize" type="text" name="" id="state" placeholder="State"/><br/><br/>
                 <input class="inputboxsize" type="number" name="" id="zip" placeholder="Zip Code"/><br/><br/>
-                <button id="shippingbutton">SAVE AND CONTINUE</button>
+                <button onclick="shipping()" id="shippingbutton">SAVE AND CONTINUE</button>
+               </div>
             </div>
     
     
@@ -138,27 +76,31 @@
       <!-- order summery -->
      <div id="checkoutorder">
         <h2>ORDER SUMMARY</h2>
-
-        <img id="checkoutimg" src="https://www.rodanandfields.com/en-us/medias/AAEY015-458x458.jpg?context=bWFzdGVyfGltYWdlc3wxMDQ2OHxpbWFnZS9qcGVnfGltYWdlcy9oMDYvaDljLzEzOTc3NTQ0NDI1NTAyLmpwZ3xiNzQ3NjJkOWU1Y2QxOWM5ZDQ4ZGQzZDA1ZjdkNzBhZmRhMjdkYzE5MTU0MWZiZjY5MDc3NzEyMjBkM2E1YThj" alt="">
-           <p id="nameofproduct">REDEFINE Multi-Function Eye Cream</p>
-             <p>$58.82</p>
-             <hr id="margin"/>
-             <h4 >Subtotal You Saved</h4>
-             <p id="sub">$207</p>
+      
+             <!-- <img id="checkoutimg" src="https://www.rodanandfields.com/en-us/medias/AAEY015-458x458.jpg?context=bWFzdGVyfGltYWdlc3wxMDQ2OHxpbWFnZS9qcGVnfGltYWdlcy9oMDYvaDljLzEzOTc3NTQ0NDI1NTAyLmpwZ3xiNzQ3NjJkOWU1Y2QxOWM5ZDQ4ZGQzZDA1ZjdkNzBhZmRhMjdkYzE5MTU0MWZiZjY5MDc3NzEyMjBkM2E1YThj" alt=""> -->
+             <!-- <p id="nameofproduct">REDEFINE Multi-Function Eye Cream</p> -->
+             <!-- <p>$58.82</p> -->
+             <!-- <hr id="margin"/> -->
+             <!-- <h4>Subtotal You Saved</h4> -->
+             <!-- <p id="sub">$207</p> -->
              <h4>Estimated Tax</h4>
-             <p id="sub">$45</p>
-             <h2>ESTIMATED TOTAL</h2>
-             <h3 id="sub">$231.06</h3>
+             <p id="sub">$0</p>
+             <div id="total_price_checkout">
+                <h3>ESTIMATED TOTAL</h3>
+                <h3 id="sub1"></h3>
+             </div>
      </div>
+     
+     
     </div>
 
     <div id="model">
         <span id="close">&times;</span>
         <h2>Credit Card</h2>
         <h4>Enter new payment information:</h4>
-        <input type="text" name="" id="nameoncreaditcard" placeholder="Name On Credit Card"/><br><br>
-        <input type="number" name="" id="cardNumber" placeholder="Card Number"><br><br>
-        <button id="creditcardbtn">SAVE AND CONTINUE</button>
+        <input type="text" name="" id="nameoncreaditcard" placeholder="Name On Credit Card(Capital Letter)"/><br><br>
+        <input type="number" name="" id="cardNumber" placeholder="Card Number(16 Digits)"><br><br>
+        <button onclick="payment_btn()" id="creditcardbtn">SAVE AND CONTINUE</button>
     </div>
    
 </body>
@@ -182,6 +124,183 @@ btn.onclick = function(){
     closeModal();
   };
 
+
+
+  let cart_data = JSON.parse(localStorage.getItem("cart"))
+ let data_div  = document.getElementById("checkoutorder")
+
+  var total = 0
+
+  cart_data.forEach(function(el){
+      var img = document.createElement("img")
+      img.src = el.image
+
+      let name = document.createElement("p")
+      name.innerText = el.name
+
+      let subTotal = document.createElement("h4")
+      subTotal.textContent = "Subtotal You Saved"
+
+      let price = document.createElement("p")
+      price.innerText = el.price
+
+      let estimatedTax = document.createElement("h4")
+      estimatedTax.textContent = "Estimated Tax"
+
+      let estimatedTax_price = document.createElement("p")
+      estimatedTax_price.textContent = "$0"
+
+      let margin_hr = document.createElement("hr")
+       
+    //   let estimated_total_text = document.createElement("h3")
+    //   estimated_total_text.textContent = "ESTIMATED TOTAL"
+      
+
+    
+
+      data_div.append(img,name,subTotal,price,margin_hr,estimatedTax,estimatedTax_price)
+
+
+      img.setAttribute("id","checkoutimg")
+      name.setAttribute("id", "nameofproduct")
+      margin_hr.setAttribute("id","margin")
+      price.setAttribute("id", "sub")
+      estimatedTax_price.setAttribute("id", "sub")
+    //   estimated_total.setAttribute("id","sub")
+
+
+
+      total = total + Number(el.price)
+      console.log('total:', total)
+    
+
+  })
+
+
+  var estimated_total = document.getElementById("sub1")
+      estimated_total.innerText = total
+
+      
+//   document.getElementById("pernl").style.display = "none"
+  var persanal_div = document.getElementById("pernl")
+  var persanal = document.getElementById("persnal")
+
+
+
+  function prsnl_info(){
+
+    
+
+    let firstname = document.getElementById("firstname").value
+    let lastname = document.getElementById("lastname").value
+    let email = document.getElementById("email").value
+           console.log(email)
+            let div = document.createElement("div")
+
+           let f_name = document.createElement("h3")
+           f_name.innerText = "First Name:-" +firstname
+
+           let l_name = document.createElement("h3")
+           l_name.innerText = "Last Name:-" + lastname
+
+           let email1 = document.createElement("h3")
+           email1.innerText = "Email:-"+ email
+
+            // persanal_div.innerHTML = null
+           
+
+    div.append(f_name,l_name,email1)
+
+    persanal.append(div)
+
+   
+    persanal_div.innerHTML = null
+}
+
+
+var item = document.getElementById("shipping_details")
+var shipping_item  = document.getElementById("shippingboder")
+function shipping(){
+  let fName = document.getElementById("firstName").value
+
+  let lName = document.getElementById("lastName").value
+
+  let phone = document.getElementById("phone").value
+
+  let adress = document.getElementById("adress").value
+
+  let city = document.getElementById("city").value
+
+  let state = document.getElementById("state").value
+
+  let zip = document.getElementById("zip").value
+
+  let shipping_div = document.createElement("div")
+
+  let f_name = document.createElement("h3")
+  f_name.innerText ="First Name:-"+ fName
+
+  let l_name = document.createElement("h3")
+  l_name.innerText = "Last Name:-"+ lName
+  
+  let phone_num = document.createElement("h3")
+  phone_num.innerText = "Mob.:-"+ phone
+
+  let shipping_adress = document.createElement("h3")
+  shipping_adress.innerText ="Adress:-"+ adress
+
+  let shipping_city = document.createElement("h3")
+  shipping_city.innerText  = "City:-"+ city
+
+  let shipping_state = document.createElement("h3")
+  shipping_state.innerText = "State:-"+ state
+
+  let shipping_zip = document.createElement("h3")
+  shipping_zip.innerText = "Zip:-"+ zip
+
+  shipping_div.append(f_name,l_name,phone_num,shipping_adress,shipping_city,shipping_state,shipping_zip)
+
+   item.append(shipping_div)
+
+   shipping_div.setAttribute("id", "margin_left")
+
+   shipping_item.innerHTML = null
+}
+
+
+var billing_div = document.getElementById("billing")
+
+function payment_btn(){
+  var name = document.getElementById("nameoncreaditcard").value
+   var card_number = document.getElementById("cardNumber").value
+
+if(name==name.toUpperCase() && card_number.length==16){
+   let p = document.createElement("p")
+   p.textContent = "Your Payment Is Processing...."
+
+  let btn = document.createElement("button")
+  btn.textContent = "Confirm Your Payment"
+  
+  btn.setAttribute("id","confirm_btn")
+
+    billing_div.append(p,btn)
+    p.setAttribute("id", "payment_alert")
+
+   btn.onclick = function(){
+     alert("Your Payment Is Sucessful!")
+     setTimeout(function () {
+
+window.location.href = "endingpage.html";
+}, 1000);
+   }
+   
+ }
+ else{
+ alert("Your card is wrong")
+
+ }
+  
+ }
 
 
 
