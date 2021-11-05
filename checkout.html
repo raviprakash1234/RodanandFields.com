@@ -1,52 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/cart.css">
-  <link rel="stylesheet" href="./css/header.css"/>
-  <link rel="stylesheet" href="./css/footer.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/paymentpage.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+    <link rel="stylesheet" href="./css/header.css"/>
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
-<style>
-</style>
 <body>
 
-  <!-- header start  -->
- <!-- searchbox -->
- <div id="model1">
-  <span id="close1">&times;</span>
-<input type="text"  id="search"/>
-<p id="search-text">Search for products, concerns and keywords.</p>
+  <!-- header start -->
 
-<div id="display1">
-    <div id="common-serch">
-        <h3>Common Searches</h3>
-            <p>Acne</p>
-            <p>Moisturizer</p>
-            <p>Retinol</p>
-            <p>Face Serum</p>
-            <p>Brows</p>
-    </div>
-
-    <div id="popular">
-        <h3>Popular Products</h3>
-        <p>R+F Lash Boost</p>
-        <p>REDEFINE Regimen</p>
-        <p>Multi-Function Eye Cream</p>
-        <p>Active Hydration Serum</p>
-        <p>Micro-Dermabrasion Paste</p>
-    </div>
-    <div id="img-display">
-        <img id="inside_search_box" src="https://www.rodanandfields.com/en-us/medias/21-GR-Spot-Corrector-Core-Regimen-SEARCH-promotion-widescreen.jpg?context=bWFzdGVyfHJvb3R8MTUxMjN8aW1hZ2UvanBlZ3xoN2EvaDA5LzEyNzgwOTI4MjcwMzY2LmpwZ3xlZDYwZjU3ZDkyMDVhYzEyMmRjYzJjZGMzMjg3OGU2MGI0M2FkYjc0ZmE3YzUzYjgxOTgxMmU4ZjA1OWY1MDAw" alt="Avatar"/>
-        <p id="text">Tackle stubborn dark marks with REVERSE SPOT CORRECTOR.</p>
-    </div>
-</div>
-</div>
-
-
-   <div id="header-cont">
+  
+  <div id="header-cont">
     <div id="find">
         <a id="col1" href="#">FIND A CONSULTANT</a>
     </div>
@@ -65,7 +34,7 @@
     </div>
   
     <div id="signin">
-      <a  href="#" id="myBtn">Sign In
+      <a  href="#">Sign In
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
           <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
         </svg>
@@ -181,79 +150,106 @@
 </div>
 
 
-
   <!-- header end -->
 
+    <h1 id="checkoutpage">CHECKOUT</h1>
 
-
+    <div id="display">
+       
    <div>
-
-
-    <h1>REVIEW YOUR BAG</h1>
-  <div id="cart_display">
-    <div id="pc-perk">
-      <div>
-        <img src="https://www.rodanandfields.com/en-us/_ui/images/pcperks_upsell/pc-perks-logo.png"><br>
-        <span id="text_in_center1">Subscribe & Save $25.00!</span>
-        <p  id="text_in_center2">Join PC Perks for $19.95 to Save 10% + Get Free Shipping on orders $80+</p>
-        <a  id="view_more" href="#">View More</a><br>
-        <button id="add_member">ADD MEMBERSHIP - $19.95</button>
-      </div>
+            <!-- PERSONALinformation -->
+            <div id="persnal"></div>
+            <div id="pernl">
+               <div id="checkout_border">
+                <h2>PERSONAL INFORMATION</h2>
+                <label for="firstname">First Name</label><br>
+                <input class="inputboxsize" type="text"  id="firstname"/><br>
+                <label for="lastname">Last Name</label><br>
+                <input class="inputboxsize" type="text"  id="lastname"><br>
+                <label for="email">Email</label><br>
+                <input class="inputboxsize" type="email"  id="email"/><br><br>
+                <input type="checkbox"  id="">
+                <p id="check">Sign me up to hear the latest on R+F products + special offers</p>
+                <button onclick="prsnl_info()" id="Checkoutcontunue">CONTINUE</button>
+               </div>
+            </div>
+            
+            <!-- shipping -->
+            <div id="shipping_details"></div>
+            <div id="shippingboder">
+               <div id="shipping_boder">
+                <h2>SHIPPING</h2>
+                <h3>Send my order to:</h3>
+                 <input class="inputboxsize" type="text" name="" id="firstName" placeholder="First Name"/><br/><br/>
+                 <input class="inputboxsize" type="text" name="" id="lastName" placeholder="Last Name"/><br/><br/>
+                <input class="inputboxsize" type="number" name="" id="phone" placeholder="Phone Number"/><br/><br/>
+                <input class="inputboxsize" type="text" name="" id="adress" placeholder="Adress"/><br/><br/>
+                <input class="inputboxsize" type="text" name="" id="city" placeholder="City"/><br/><br/>
+                <input class="inputboxsize" type="text" name="" id="state" placeholder="State"/><br/><br/>
+                <input class="inputboxsize" type="number" name="" id="zip" placeholder="Zip Code"/><br/><br/>
+                <button onclick="shipping()" id="shippingbutton">SAVE AND CONTINUE</button>
+               </div>
+            </div>
     
-       <!-- add product div -->
-   <div id="product_div">
-    <select  id="incre">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3"></option>
-    </select>
-  
+    
+            <!-- payment  -->
+          <div id="billing">
+          
+            <h2>BILLING</h2>
+            <a id="myBtn" href="">
+                <input type="radio">
+                <label>Credit Card</label><br><br>
+                <input type="radio">
+                <label for="">
+                    <img src="https://www.rodanandfields.com/en-us/_ui/images/card-icons/paypal.svg" alt="">
+                </label><br><br>
+                <input type="radio"/>
+                <label>
+                    <img src="https://www.rodanandfields.com/en-us/_ui/images/card-icons/klarna.svg" alt="">
+                </label>
+            </a>
+
+           
+
+          </div>
    </div>
- 
-  </div>
 
-   
-   <!-- oreder summery -->
-   <div id="summery">
-    <div id="border">
-      <div>
+
+      <!-- order summery -->
+     <div id="checkoutorder">
         <h2>ORDER SUMMARY</h2>
-        <p>SUBTOTAL</p>
-        <p id="subTotal"></p>
-        <p>BUNDLE SAVINGS</p>
-        <p id="float_left">$0</p>
-        <p>SHIPPING</p>
-        <p id="float_left">Calculated At Checkout</p>
-        <hr/>
-        <h3>ESTIMATED TOTAL</h3>
-        <h2 id="estimated"></h2>
-        <p>4 interest-free payments of $51.75 with Klarna.</p>
-      </div>
-
-
-      <div>
-       <input type="text" id="promo" placeholder="Enter Promo Code"/>
-       <button id="apply_btn" onclick="apply_promo(event)">Apply</button>
-       <p id="congo"></p>
-      </div>
+      
+             <!-- <img id="checkoutimg" src="https://www.rodanandfields.com/en-us/medias/AAEY015-458x458.jpg?context=bWFzdGVyfGltYWdlc3wxMDQ2OHxpbWFnZS9qcGVnfGltYWdlcy9oMDYvaDljLzEzOTc3NTQ0NDI1NTAyLmpwZ3xiNzQ3NjJkOWU1Y2QxOWM5ZDQ4ZGQzZDA1ZjdkNzBhZmRhMjdkYzE5MTU0MWZiZjY5MDc3NzEyMjBkM2E1YThj" alt=""> -->
+             <!-- <p id="nameofproduct">REDEFINE Multi-Function Eye Cream</p> -->
+             <!-- <p>$58.82</p> -->
+             <!-- <hr id="margin"/> -->
+             <!-- <h4>Subtotal You Saved</h4> -->
+             <!-- <p id="sub">$207</p> -->
+             <h4>Estimated Tax</h4>
+             <p id="sub">$0</p>
+             <div id="total_price_checkout">
+                <h3>ESTIMATED TOTAL</h3>
+                <h3 id="sub1"></h3>
+             </div>
+     </div>
+     
+     
     </div>
 
-    <br/>
+    <div id="model">
+        <span id="close">&times;</span>
+        <h2>Credit Card</h2>
+        <h4>Enter new payment information:</h4>
+        <input type="text" name="" id="nameoncreaditcard" placeholder="Name On Credit Card(Capital Letter)"/><br><br>
+        <input type="number" name="" id="cardNumber" placeholder="Card Number(16 Digits)"><br><br>
+        <button onclick="payment_btn()" id="creditcardbtn">SAVE AND CONTINUE</button>
+    </div>
 
-     <div>
-      <a href="showallproduct.html"> <button id="continue_shopping">CONTINUE SHOPPING</button></a><br/><br/>
-      <a href="checkout.html"> <button id="checkout">SECURE CHECKOUT</button></a>
-     </div>
 
-  </div>
-
-
-   </div>
- 
-
-<div style="margin-top: 60%;"></div>
-
-      <!-- footer part start -->
+<br>
+<br>
+<br>
+    <!-- footer part start -->
 
 <div id="ft-display">
 
@@ -439,13 +435,15 @@
   <hr/>
   <a id="ft-col" href="#"><p>Disclaimer</p></a>
   <a id="ft-col" href="#"><p>Preference Center</p></a>
-</div> 
+</div>
 
 
 <!-- footer part end -->
 
 
 
+
+   
 </body>
 </html>
-<script src="./scripts/cart.js"></script>
+<script src="./scripts/checkout.js"></script>
